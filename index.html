@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZYNOTIXX — Futuristic Digital Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-shell">
+      <!-- Opening FX overlay -->
+      <div class="opening-fx" id="openingFx">
+        <div class="cannon cannon-left">
+          <div class="cannon-body"></div>
+          <div class="cannon-barrel"></div>
+        </div>
+        <div class="cannon cannon-right">
+          <div class="cannon-body"></div>
+          <div class="cannon-barrel"></div>
+        </div>
+        <div class="money-layer" id="moneyLayer"></div>
+        <div class="opening-headline">
+          <span class="opening-headline-main"
+            >You’re in the right place.<br />Time to grow your business.</span
+          >
+        </div>
+      </div>
+
+      <!-- Cursor reactive hex background -->
+      <div class="hex-grid" aria-hidden="true"></div>
+
+      <!-- Metallic scroll sphere -->
+      <div class="scroll-sphere" id="scrollSphere" aria-hidden="true"></div>
+
+      <!-- Side service icons -->
+      <aside class="side-icons side-icons-left">
+        <button class="side-icon" data-target="#services">
+          <span class="side-icon-glyph">🎬</span>
+          <span class="side-icon-label">Video Editing</span>
+        </button>
+        <button class="side-icon" data-target="#services">
+          <span class="side-icon-glyph">🎨</span>
+          <span class="side-icon-label">Graphic Design</span>
+        </button>
+      </aside>
+      <aside class="side-icons side-icons-right">
+        <button class="side-icon" data-target="#services">
+          <span class="side-icon-glyph">💻</span>
+          <span class="side-icon-label">Web Dev</span>
+        </button>
+        <button class="side-icon" data-target="#services">
+          <span class="side-icon-glyph">📈</span>
+          <span class="side-icon-label">SEO</span>
+        </button>
+      </aside>
+
+      <!-- Main content -->
+      <header class="site-header">
+        <div class="logo">ZYNOTIXX</div>
+        <nav class="nav">
+          <button class="nav-link" data-target="#services">Services</button>
+          <button class="nav-link" data-target="#reviews">Reviews</button>
+          <button class="nav-link" data-target="#contact">Contact</button>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section class="section hero" id="hero" data-section>
+          <div class="hero-inner">
+            <div class="hero-title">
+              <span class="hero-brand-main">
+                <span class="hero-brand-zy">ZYNOTI</span
+                ><span class="hero-brand-xx">XX</span>
+              </span>
+              <p class="hero-sub">Where your brand stands out</p>
+            </div>
+            <p class="hero-tagline">
+              A high-end digital growth studio for bold brands that want to
+              dominate tomorrow’s attention economy.
+            </p>
+            <div class="hero-cta-row">
+              <a href="#contact" class="btn btn-primary">
+                Book a growth call
+              </a>
+              <a href="#services" class="btn btn-ghost"> Explore services </a>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric">
+                <span class="metric-value">120+</span>
+                <span class="metric-label">brands scaled</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">3.2x</span>
+                <span class="metric-label">avg. ROI on video</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">98%</span>
+                <span class="metric-label">client retention</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section section-services" id="services" data-section>
+          <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">
+              Engineered to turn cold traffic into loyal customers with cinematic
+              storytelling and conversion-focused design.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-glow"></div>
+              <h3>Video Editing</h3>
+              <p>
+                High-impact ads, short-form content, and brand films cut with
+                platform-native pacing and scroll-stopping hooks.
+              </p>
+              <ul>
+                <li>UGC + performance creatives</li>
+                <li>Storyboarding & scripting support</li>
+                <li>End-to-end post-production pipeline</li>
+              </ul>
+            </article>
+            <article class="service-card">
+              <div class="service-glow"></div>
+              <h3>Graphic Designing</h3>
+              <p>
+                Visual systems that make your brand instantly recognizable across
+                every touchpoint.
+              </p>
+              <ul>
+                <li>Brand identity & style guides</li>
+                <li>Campaign & social design</li>
+                <li>Pitch decks & launch assets</li>
+              </ul>
+            </article>
+            <article class="service-card">
+              <div class="service-glow"></div>
+              <h3>Web Development</h3>
+              <p>
+                Fast, conversion-optimized experiences built for modern buyers
+                and real-world performance.
+              </p>
+              <ul>
+                <li>Landing pages & funnels</li>
+                <li>Full-funnel analytics baked in</li>
+                <li>SEO-ready technical foundations</li>
+              </ul>
+            </article>
+            <article class="service-card">
+              <div class="service-glow"></div>
+              <h3>SEO</h3>
+              <p>
+                Search strategies that compound over time and convert intent into
+                predictable revenue.
+              </p>
+              <ul>
+                <li>Technical & on-page optimization</li>
+                <li>Content architecture & planning</li>
+                <li>Authority & trust building</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section section-reviews" id="reviews" data-section>
+          <div class="section-header">
+            <h2 class="section-title">Client Signal, Not Noise</h2>
+            <p class="section-subtitle">
+              Brands that partner with ZYNOTIXX don’t just grow — they outpace.
+            </p>
+          </div>
+          <div class="reviews-grid">
+            <article class="review-card">
+              <p class="review-quote">
+                “Within 60 days, our paid traffic became our highest ROI channel.
+                The creative testing system ZYNOTIXX built is now core to our
+                growth.”
+              </p>
+              <div class="review-meta">
+                <span class="review-name">Jordan Malik</span>
+                <span class="review-role">CMO, DTC fitness brand</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p class="review-quote">
+                “They rebuilt our site, content, and SEO from the ground up. We
+                3x’d organic pipeline in 6 months without increasing ad spend.”
+              </p>
+              <div class="review-meta">
+                <span class="review-name">Elena Rossi</span>
+                <span class="review-role">Founder, B2B SaaS</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p class="review-quote">
+                “Every deliverable feels cinematic but engineered for
+                performance. Our brand finally looks like the leader we are.”
+              </p>
+              <div class="review-meta">
+                <span class="review-name">Marcus Lee</span>
+                <span class="review-role">CEO, luxury ecommerce</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p class="review-quote">
+                “It’s rare to find a partner that understands brand, growth, and
+                speed at this level. ZYNOTIXX feels like an in-house team.”
+              </p>
+              <div class="review-meta">
+                <span class="review-name">Priya Desai</span>
+                <span class="review-role">Head of Growth, fintech</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-contact" id="contact" data-section>
+          <div class="section-header">
+            <h2 class="section-title">Let’s build something powerful together.</h2>
+            <p class="section-subtitle">
+              Tell us where you are today, and where you want to be 90 days from
+              now. We’ll engineer the path.
+            </p>
+          </div>
+          <div class="contact-layout">
+            <div class="contact-details">
+              <div class="contact-row">
+                <span class="contact-label">Email</span>
+                <a href="mailto:hello@zynotixx.agency" class="contact-value"
+                  >hello@zynotixx.agency</a
+                >
+              </div>
+              <div class="contact-row">
+                <span class="contact-label">WhatsApp / Phone</span>
+                <a href="tel:+1234567890" class="contact-value">+1 (234) 567-890</a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-label">Social</span>
+                <div class="social-row">
+                  <a href="#" class="social-pill">Instagram</a>
+                  <a href="#" class="social-pill">Behance</a>
+                  <a href="#" class="social-pill">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form" autocomplete="off">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Zynotixx Labs" />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@brand.com"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="budget">Monthly budget</label>
+                <select id="budget" name="budget">
+                  <option value="">Select a range</option>
+                  <option value="3-5k">$3k – $5k</option>
+                  <option value="5-10k">$5k – $10k</option>
+                  <option value="10-25k">$10k – $25k</option>
+                  <option value="25k+">$25k+</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="message">What are you trying to build?</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your brand, your products, and what success looks like."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                Send brief (demo only)
+              </button>
+              <p class="form-note">
+                This demo form does not send data. Connect it to your backend or
+                tools when you’re ready to go live.
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>© <span id="year"></span> ZYNOTIXX Digital. All rights reserved.</span>
+        <span>Built for the brands that refuse to blend in.</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
