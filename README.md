@@ -1,55 +1,27 @@
-# ZYNOTIXX – Futuristic Digital Agency Landing Page
+# ZYNOTIXX website
 
-High-end, dark, cyber-style agency site for the ZYNOTIXX brand.  
-Built as a single-page static site with HTML, CSS, and vanilla JavaScript – ready for GitHub Pages.
+Single-page site for GitHub Pages. **Three files to edit:**
 
-## Features
+| File | What it is |
+|------|------------|
+| **`index.html`** | All page content (text, sections, links, form). |
+| **`styles.css`** | All layout, colors, animations, responsive rules. |
+| **`script.js`** | Opening animation, scroll effects, smooth navigation. |
 
-- Opening **cannon blast** animation with flying money particles
-- Dark **hexagon-inspired digital background** with subtle motion
-- Bold ZYNOTIXX hero with dual-color branding (`ZYNOTI` white glow, `XX` red neon)
-- Vertical **service icons** on both sides
-- Scroll-triggered **metallic sphere** that flies diagonally to reveal each section
-- Sections:
-  - **Hero**
-  - **Our Services**
-  - **Client Reviews**
-  - **Contact / CTA**
-- Micro-interactions, hover glows, soft gradients, and responsive layout
+Optional: `README.md` (this file) — you can delete it from the repo if you do not want it.
 
-## File structure
+## Update the live site (GitHub, no terminal)
 
-- `index.html` – main page markup
-- `styles.css` – layout, typography, colors, animations
-- `script.js` – opening FX, scroll sphere, smooth scrolling, demo form behavior
+1. Open your repo on GitHub (e.g. `Roc-her/Zynotixx`).
+2. Click the file you want (`index.html`, `styles.css`, or `script.js`).
+3. Click the **pencil** (Edit).
+4. Change what you need, then **Commit changes**.
+5. Wait about one minute and refresh your Pages URL.
 
-## How to run locally
+## Form email (Formspree)
 
-1. Open the folder:
-   - On Windows, navigate to `c:\Users\Alsa\zynotixx`.
-2. Double-click `index.html` to open it in your browser.
-3. For the best experience (and to avoid caching issues), use a lightweight local server such as:
-   - VS Code + **Live Server** extension, or
-   - `npx serve` from a terminal inside the folder.
+In `index.html`, find `action="https://formspree.io/f/xxxxxxxx"` and replace `xxxxxxxx` with your Formspree form ID after you sign up at [formspree.io](https://formspree.io).
 
-## How to put this on GitHub Pages
+## Local preview
 
-1. Create a new repository on GitHub (e.g. `zynotixx-agency`).
-2. In this folder (`c:\Users\Alsa\zynotixx`), run:
-   - `git init`
-   - `git remote add origin https://github.com/<your-username>/zynotixx-agency.git`
-   - `git add .`
-   - `git commit -m "Initial ZYNOTIXX landing page"`
-   - `git push -u origin main`
-3. On GitHub:
-   - Go to **Settings → Pages**.
-   - Under **Build and deployment**, select **Deploy from a branch**.
-   - Choose branch `main` and folder `/root`.
-   - Save – GitHub will build and give you a public URL.
-
-## Customization tips
-
-- Update **copy** and **metrics** directly in `index.html`.
-- Tweak colors, glow intensity, and spacing in `styles.css` (`:root` variables).
-- Hook up the contact form in `script.js` to your backend, email service, or tools when you’re ready.
-
+Double-click `index.html` on your computer, or open the folder in VS Code / Cursor and use **Live Server**.

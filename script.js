@@ -148,15 +148,5 @@ sections.forEach((sec, idx) => {
   }
 });
 
-// Contact form (demo only) --------------------------------------------------
-
-const contactForm = document.querySelector(".contact-form");
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert(
-      "This is a demo contact form.\n\nHook this up to your email service, CRM, or backend when you’re ready to go live."
-    );
-  });
-}
+// Contact form posts to Formspree (see action URL in index.html).
 
